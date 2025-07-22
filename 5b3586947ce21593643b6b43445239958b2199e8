@@ -16,6 +16,23 @@
       "message": "Fixes,\nhttps://gitlab.com/LineageOS/issues/android/-/issues/9062",
       "revId": "5b3586947ce21593643b6b43445239958b2199e8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "16bcabc7_ea22dd05",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-07-22T05:13:52Z",
+      "side": 1,
+      "message": "This is not what the original commit does, this extends it. Display ID was already passed as of https://review.lineageos.org/c/LineageOS/android_device_xiaomi_vayu/+/432761, just make another change expanding it for the other Display ID instead of picking this.",
+      "revId": "5b3586947ce21593643b6b43445239958b2199e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
