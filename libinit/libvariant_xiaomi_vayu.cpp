@@ -1,17 +1,14 @@
 /*
- * Copyright (C) 2021 The LineageOS Project
+ * Copyright (C) 2021-2025 The LineageOS Project
  *
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include <libinit_dalvik_heap.h>
-#include <libinit_variant.h>
-
-#include "vendor_init.h"
+#include <libvariant.h>
 
 #define FINGERPRINT "POCO/vayu_global/vayu:13/RKQ1.200826.002/V14.0.3.0.TJUMIXM:user/release-keys"
 
-static const variant_info_t bhima_info = {
+static const variant_info bhima_info = {
     .hwc_value = "INDIA",
     .sku_value = "",
 
@@ -24,7 +21,7 @@ static const variant_info_t bhima_info = {
     .nfc = false,
 };
 
-static const variant_info_t vayu_info = {
+static const variant_info vayu_info = {
     .hwc_value = "",
     .sku_value = "",
 
@@ -37,12 +34,7 @@ static const variant_info_t vayu_info = {
     .nfc = true,
 };
 
-static const std::vector<variant_info_t> variants = {
+const std::vector<variant_info> variants = {
     bhima_info,
     vayu_info,
 };
-
-void vendor_load_properties() {
-    set_dalvik_heap();
-    search_variant(variants);
-}

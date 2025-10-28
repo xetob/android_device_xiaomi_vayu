@@ -34,6 +34,9 @@ PRODUCT_PACKAGES += \
     libkeymaster_messages.vendor \
     vendor.xiaomi.hardware.fx.tunnel@1.0.vendor
 
+# Init
+$(call soong_config_set,xiaomi_msmnile,variant_lib,//$(LOCAL_PATH):libvariant_xiaomi_vayu)
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlayDevice \
